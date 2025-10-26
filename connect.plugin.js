@@ -2,7 +2,7 @@
  * @name Connect
  * @author ContentLTD
  * @description Lets Connect! 
- * @version 1.1.0
+ * @version 1.1.1
  * @source https://github.com/lostinfinite/Connect/releases/tag/v1.1.0
  */
 
@@ -25,6 +25,11 @@ module.exports = class Connect {
     let node;
 
     while ((node = walker.nextNode())) {
+      const parentEl = node.parentElement;
+      if (parentEl && typeof parentEl.closest === "function" && parentEl.closest('.markup__75297')) {
+        continue;
+      }
+
       const originalText = node.textContent;
       let newText = originalText;
 
