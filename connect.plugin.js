@@ -1,7 +1,7 @@
 /**
  * @name Connect
  * @author ContentLTD
- * @description Lets Connect! Bite Me:3
+ * @description Lets Connect! 
  * @version 1.1.0
  * @source https://github.com/lostinfinite/Connect/releases/tag/v1.1.0
  */
